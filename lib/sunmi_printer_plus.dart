@@ -151,7 +151,6 @@ class SunmiPrinter {
     }
     Map<String, dynamic> arguments = <String, dynamic>{"text": '$text\n'};
     await _channel.invokeMethod("PRINT_TEXT", arguments);
-    await initPrinter();
   }
 
   ///*printRow*
