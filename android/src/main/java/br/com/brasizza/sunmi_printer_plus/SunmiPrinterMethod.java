@@ -38,8 +38,6 @@ public class SunmiPrinterMethod {
 
 
 
-            } catch (RemoteException e) {
-                e.printStackTrace();
             } catch (NullPointerException e) {
 
 
