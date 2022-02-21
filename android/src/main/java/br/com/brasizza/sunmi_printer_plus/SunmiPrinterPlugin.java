@@ -305,7 +305,10 @@ public class SunmiPrinterPlugin implements FlutterPlugin, MethodCallHandler {
         sunmiPrinterMethod.sendLCDMultiString(lcdText, lcdAlign);
         result.success(true);
         break;
-
+      case "OPEN_CASH_DRAWER":
+        sunmiPrinterMethod.openCashDrawer();
+        result.success(true);
+        break;
       default:
         result.notImplemented();
         break;

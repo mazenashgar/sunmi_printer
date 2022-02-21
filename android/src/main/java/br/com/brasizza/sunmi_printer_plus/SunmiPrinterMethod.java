@@ -439,4 +439,12 @@ public class SunmiPrinterMethod {
             }
         };
     }
+
+    public void openCashDrawer() {
+        try {
+            _woyouService.openDrawer(_callback());
+        } catch (RemoteException e) {
+        } catch (NullPointerException e) {
+        }
+    }
 }

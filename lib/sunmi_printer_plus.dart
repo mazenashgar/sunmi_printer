@@ -488,4 +488,11 @@ class SunmiPrinter {
     return await _channel
         .invokeMethod("LCD_MULTI_STRING", {"text": texts, "align": aligns});
   }
+
+  /// Display variable height multiline string.
+  /// aligns: The weight of the solid content of each line. Like flex.
+  static Future<void> openCashDrawer() async {
+    return await _channel
+        .invokeMethod("OPEN_CASH_DRAWER");
+  }
 }
