@@ -92,7 +92,7 @@ public class SunmiPrinterPlugin implements FlutterPlugin, MethodCallHandler {
             status_msg = "NORMAL"; 
             break;
           case 4:
-            status_msg = "OUT_OF_PAPER" 
+            status_msg = "OUT_OF_PAPER";
             break;
           case 5:
             status_msg = "OVERHEATED";
