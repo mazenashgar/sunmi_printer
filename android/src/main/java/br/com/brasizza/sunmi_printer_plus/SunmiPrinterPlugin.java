@@ -75,10 +75,7 @@ public class SunmiPrinterPlugin implements FlutterPlugin, MethodCallHandler {
         String status_msg = "";
 
        
-/**
-* Get the latest status of the printer
-* Return value: 1 Printer normal 2, Printer update status 3 Get status abnormal 4 Out of paper 5 Overheating 6 Open cover 7 Cutter abnormal 8 Cutter recovery 505 Printer not detected
-**/
+
 
         // response printer status
         switch (status_code) {
