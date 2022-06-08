@@ -74,22 +74,25 @@ public class SunmiPrinterPlugin implements FlutterPlugin, MethodCallHandler {
 
         String status_msg = "";
 
+       
+
+
         // response printer status
         switch (status_code) {
-          case 0:
+     case 0:
             status_msg = "ERROR";
             break;
           case 1:
             status_msg = "NORMAL";
             break;
           case 2:
-            status_msg = "ABNORMAL_COMMUNICATION";
+            status_msg = "PREPARING";
             break;
           case 3:
-            status_msg = "OUT_OF_PAPER";
+            status_msg = "ABNORMAL_COMMUNICATION"; 
             break;
           case 4:
-            status_msg = "PREPARING";
+            status_msg = "OUT_OF_PAPER";
             break;
           case 5:
             status_msg = "OVERHEATED";
